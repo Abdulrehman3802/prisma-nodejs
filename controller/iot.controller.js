@@ -1,6 +1,6 @@
 const {PrismaClient} = require("@prisma/client")
 const prisma = new PrismaClient()
-
+/** Update Many Organizations in one go */
 // module.exports.getData = async (req, res) => {
 //     const data = await prisma.customers.updateMany({
 //         where:{
@@ -13,6 +13,7 @@ const prisma = new PrismaClient()
 //     )
 //     res.json(data)
 // }
+/** Find Macthing object Id  */
 // module.exports.getData = async (req, res) => {
 //     const data = await prisma.customers.findFirst({
 //         where:{
@@ -22,6 +23,7 @@ const prisma = new PrismaClient()
 //     )
 //     res.json(data)
 // }
+/** Get All organizations */
 // module.exports.getData = async (req, res) => {
 //     const data = await prisma.customers.findMany({
 //
@@ -42,6 +44,7 @@ module.exports.getData = async (req, res) => {
     )
     res.json(data)
 }
+/** Default Route */
 module.exports.hello = async (req,res)=>{
     res.json("Hello");
 }
